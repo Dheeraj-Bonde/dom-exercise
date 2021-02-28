@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="showCood(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolor fugiat omnis voluptas dolore corporis, aliquam quidem aspernatur est voluptatibus nesciunt quae iusto vitae, reiciendis itaque! Tenetur sint cupiditate rerum!</h1>
+
+    <script>
+        function showCood(event){
+            var x = event.pageX;
+            var y = event.pageY;
+
+            var span = document.createElement("span");
+            span.innerHTML = "X-Coordinate : "+x  +"   Y-Coordinate :"+y;
+            document.body.append(span);
+            var nxt = document.createElement("br");
+            document.body.append(nxt);
+
+            
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span onmouseover="color()">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque officiis placeat voluptatum quasi explicabo id illo a excepturi dolorem omnis dolore obcaecati beatae aliquid incidunt debitis ab, aperiam vitae non.
+    </span>
+    <div style="padding-top: 2rem ;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odio temporibus assumenda nobis quasi porro modi, ex dolores earum, vitae facilis corrupti amet error? Impedit illo nisi excepturi natus repellat?
+    </div>
+
+    <script>
+        function color(){
+            document.querySelector("span").setAttribute("style","color:red");
+        }
+        document.body.div.onmouseover = ()=>{
+            document.querySelector("span").setAttribute("style","color:black");
+        }
+    </script>
+</body>
+</html>

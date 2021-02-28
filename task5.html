@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var decimal = parseInt(prompt("Enter decimal number"));
+        var binary = decimal.toString(2);
+        var hexadec = decimal.toString(16);
+
+        var p = document.createElement("h1");
+        p.innerHTML = "Binary and hexaodecimal of "+decimal+" are "+binary+" and "+hexadec+" respectively.";
+        document.body.append(p);
+        console.log(hexadec);
+    </script>
+</body>
+</html>
